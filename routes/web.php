@@ -1,5 +1,7 @@
 <?php
 
+use Lcss\Http\Controllers\Frontend;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +13,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [Frontend\TopController::class, 'index'])->name('top');

@@ -174,6 +174,7 @@ return [
         // Lcss\Providers\BroadcastServiceProvider::class,
         Lcss\Providers\EventServiceProvider::class,
         Lcss\Providers\RouteServiceProvider::class,
+        Lcss\Providers\ViewServiceProvider::class,
 
     ],
 
