@@ -7,8 +7,12 @@ use Lcss\Http\Controllers\Controller;
 
 class TopController extends Controller
 {
+    /**
+     * Top Page
+     * @return \Illuminate\View\View
+     */
     function index()
     {
-        return view('default/top');
+        return view('default.top');
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="{{ config('app.locale') }}">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -23,8 +23,8 @@
 @endif
 <link rel="stylesheet" href="/css/default/{{ Route::currentRouteName() }}.css">
 </head>
-<body class="">
-    <div class="container">
+<body>
+    <div id="vgContainer">
         @yield('contents')
     </div>
     <script type="text/javascript" src="/js/app.js"></script>
